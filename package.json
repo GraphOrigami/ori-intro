@@ -1,0 +1,8 @@
+{
+  "name": "ori-intro",
+  "version": "0.0.1",
+  "type": "module",
+  "dependencies": {
+    "@graphorigami/origami": "https://gitpkg.now.sh/GraphOrigami/origami/packages/origami?0a9a66d3"
+  }
+}
