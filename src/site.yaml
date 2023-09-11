@@ -1,18 +1,46 @@
 index.html: |
   <!DOCTYPE html>
-  <html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link rel="stylesheet" href="styles/styles.css" />
+    </head>
     <body>
-      <h1>Index</h1>
-      <a href="about/">About</a>
+      <h1>Home page</h1>
+      <p>
+        This tiny site can be packaged into a single file.
+      </p>
+      <p>
+        <a href="about.html">About</a>
+      </p>
     </body>
   </html>
 
-about:
-  index.html: |
-    <!DOCTYPE html>
-    <html>
-      <body>
-        <h1>About</h1>
-        <p>This site is defined in a YAML file.</p>
-      </body>
-    </html>
+about.html: |
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width,initial-scale=1" />
+      <link rel="stylesheet" href="styles/styles.css" />
+    </head>
+    <body>
+      <h1>About</h1>
+      <p>
+        This site can be served from loose files, or directly from a single file.
+      </p>
+      <p>
+        <a href="index.html">Back to Home</a>
+      </p>
+    </body>
+  </html>
+
+styles:
+  styles.css: |
+    body {
+      color: #333;
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 5vmin;
+    }
